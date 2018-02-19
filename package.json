@@ -1,0 +1,56 @@
+{
+  "name": "shop-tarts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-client": "webpack",
+    "build-client-watch": "webpack -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./main.js",
+    "start-dev": "NODE_ENV='development' npm run build-client-watch & npm run start-server",
+    "start-server": "nodemon server -e html, js, scss --ignore public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shannenye/Shop-Tarts.git"
+  },
+  "author": "Shannen Ye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shannenye/Shop-Tarts/issues"
+  },
+  "homepage": "https://github.com/shannenye/Shop-Tarts#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "history": "^4.7.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.15.1",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^1.0.0",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "sequelize": "^4.33.4",
+    "socket.io": "^2.0.4",
+    "webpack": "^3.11.0",
+    "webpack-livereload-plugin": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.15.1",
+    "webpack": "^3.11.0",
+    "webpack-livereload-plugin": "^1.0.0"
+  }
+}
