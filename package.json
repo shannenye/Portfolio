@@ -1,5 +1,5 @@
 {
-  "name": "shop-tarts",
+  "name": "shannen-ye",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,22 +7,22 @@
     "build-client": "webpack",
     "build-client-watch": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1",
-
     "start-dev": "NODE_ENV='development' npm run build-client-watch & npm run start-server",
-    "start-server": "nodemon server -e html, js, scss --ignore public"
+    "start-server": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shannenye/Shop-Tarts.git"
+    "url": "git+https://github.com/shannenye/Portfolio.git"
   },
   "author": "Shannen Ye",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shannenye/Shop-Tarts/issues"
+    "url": "https://github.com/shannenye/Portfolio/issues"
   },
-  "homepage": "https://github.com/shannenye/Shop-Tarts#readme",
+  "homepage": "https://github.com/shannenye/Portfolio#readme",
   "dependencies": {
     "axios": "^0.17.1",
+    "babel-preset-stage-2": "^6.24.1",
     "body-parser": "^1.18.2",
     "compression": "^1.7.2",
     "crypto": "^1.0.1",
@@ -39,6 +39,7 @@
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
     "sequelize": "^4.33.4",
